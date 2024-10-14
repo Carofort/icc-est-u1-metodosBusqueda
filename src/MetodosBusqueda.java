@@ -2,10 +2,11 @@ import java.util.Arrays;
 public class MetodosBusqueda {
 
     public int busquedaSecuencial(int[] arreglo, int valorBuscado){
+        int comp = 0;
         for(int i = 0; i < arreglo.length; i++){
             if(arreglo[i] == valorBuscado){
-                int comp = i + 1;
-                System.out.println("Comparaciones: " + comp);
+                comp = i + 1;
+                System.out.println("Número de comparaciones: " + comp);
                 return i;
             }
         }
@@ -22,6 +23,7 @@ public class MetodosBusqueda {
             count++;
             if(arr[medio] == value){
                 //Elemento encontrado
+                System.out.println("Número de comparaciones: " + count);
                 return medio;
             }
 
@@ -32,7 +34,6 @@ public class MetodosBusqueda {
             }
 
         }
-        System.out.println("Comparaciones: " + count);
         return -1;
     }
 
@@ -44,8 +45,6 @@ public class MetodosBusqueda {
         System.out.println(Arrays.toString(arreg));
         return arreg;
     }
-
-
 
     public void printArreglo(int[] arreglo){
         for (int elem : arreglo){
