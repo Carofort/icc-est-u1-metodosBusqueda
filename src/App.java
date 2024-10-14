@@ -6,7 +6,7 @@ public class App {
         
         //BÚSQUEDA BINARIA
         long starttimeBinaria = System.nanoTime();
-        int resultadoBinaria = metodosBusqueda.busquedaSecuencial(arregloLargo, 50418);
+        int resultadoBinaria = metodosBusqueda.busquedaBinaria(arregloLargo, 50418);
         long endtimeBinaria = System.nanoTime();
         System.out.println("*Tiempo de ejecución de la búsqueda binaria: " + 
                 (endtimeBinaria - starttimeBinaria) + " nanosegundos");
@@ -19,7 +19,7 @@ public class App {
 
         //BÚSQUEDA SECUENCIAL
         long starttimeSecuencial = System.nanoTime();
-        int posi = metodosBusqueda.busquedaBinaria(arregloLargo, 50418);
+        int posi = metodosBusqueda.busquedaSecuencial(arregloLargo, 50418);
         long endtimeSecuencial = System.nanoTime();
         System.out.println("*Tiempo de ejecución de la búsqueda Secuencial: " + 
                 (endtimeSecuencial - starttimeSecuencial) + " nanosegundos");

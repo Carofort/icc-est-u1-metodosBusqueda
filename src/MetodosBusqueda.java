@@ -2,11 +2,11 @@ import java.util.Arrays;
 public class MetodosBusqueda {
 
     public int busquedaSecuencial(int[] arreglo, int valorBuscado){
-        int comp = 0;
+        int comparaciones = 0;
         for(int i = 0; i < arreglo.length; i++){
             if(arreglo[i] == valorBuscado){
-                comp = i + 1;
-                System.out.println("Número de comparaciones: " + comp);
+                comparaciones = i + 1;
+                System.out.println("Número de comparaciones: " + comparaciones);
                 return i;
             }
         }
